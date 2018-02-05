@@ -92,7 +92,6 @@ end
 def sing()
 	i =99
 	while i>=0
-		
 		if i == 1
 			puts "#{i} bottle of root beer on the wall, #{i} bottle of root beer ... take one down, pass it around"
 		elsif i ==0
@@ -100,8 +99,26 @@ def sing()
 		else
 			puts "#{i} bottles of root beer on the wall, #{i} bottles of root beer ... take one down, pass it around" 
 		end
-
 		i-= 1
 	end
 end
-puts sing()
+# puts sing()
+
+array6 = ["John", "George", "James", "Anna"]
+
+def returnarray(argument)
+	i = 0
+	str = ''
+	while i < argument.length
+		if i == argument.length-1
+			str += " and " + argument[i]
+		else
+		str += argument[i] + ", "
+		end
+	i+=1
+	end 
+	puts str
+end
+
+
+puts returnarray(array6)
