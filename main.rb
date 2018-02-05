@@ -19,7 +19,7 @@ def firstloop(argument)
  	end
 end
 
-puts firstloop(infoMe)
+# puts firstloop(infoMe)
 
 def virtualdoor()
 	puts "which door do you want to enter, enter 1-3?"
@@ -91,11 +91,16 @@ end
 
 def sing()
 	i =99
-	while i>0
-		puts "#{i} bottles of root beer on the wall, #{i} bottles of root beer ... take one down, pass it around" 
-		if i ==1
-			puts "#{i-1} bottles of root beer on the wall, #{i-1} bottles of root beer ... no more root beer on the wall"
+	while i>=0
+		
+		if i == 1
+			puts "#{i} bottle of root beer on the wall, #{i} bottle of root beer ... take one down, pass it around"
+		elsif i ==0
+			puts "#{i} bottles of root beer on the wall, #{i} bottles of root beer ... no more root beer on the wall"
+		else
+			puts "#{i} bottles of root beer on the wall, #{i} bottles of root beer ... take one down, pass it around" 
 		end
+
 		i-= 1
 	end
 end
